@@ -1,0 +1,60 @@
+<template>
+  <div>
+    <HeaderAuth />
+    <div class="card">
+      <div class="form">
+        <input placeholder="メールアドレス" type="email" />
+        <input placeholder="パスワード" type="password" />
+        <input placeholder="確認用パスワード" type="password" />
+        <button @click="auth">登録</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import HeaderAuth from "../components/HeaderAuth";
+export default {
+  components: {
+    HeaderAuth
+  }
+};
+</script>
+
+<style scoped>
+button {
+  width: 100px;
+  text-align: center;
+  padding: 8px 0 10px;
+  color:rgb(226, 226, 226);
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card {
+  margin: 100px auto;
+  width: 350px;
+  background: rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 20px;
+}
+.card p {
+  color:rgb(226, 226, 226);
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  margin-top: 15px;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solidrgb(226, 226, 226);
+  color: black;
+}
+.form {
+  text-align: center;
+}
+.form button {
+  margin-top: 15px;
+}
+</style>
